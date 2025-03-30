@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Oswald:wght@200..700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #272757, #1b1b3a);
+  font-family: 'Annie Use Your Telescope';
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.portfolio span:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.portfolio .swiper{
+  overflow: visible!important;
+}
+
+.portfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.portfolio img {
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.portfolio img:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+label {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide:hover label {
+  opacity: 1;
+}
+
+.portfolio img {
+  background: #1b1b3a;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.portfolio span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+ 
+}
+
+  
+
+
+.portfolio span:hover {
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.custom-flex {
+  display: flex;
+  flex-direction: row; 
+}
+
+@media (max-width: 960px) {
+  .custom-flex {
+    flex-direction: column;
+  }
+}
+
+#Expérience {
+  padding-top: 100px; 
+}
+
+@layer utilities {
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .animate-blink {
+      animation: blink 0.8s step-end infinite;
+    }
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+}
+
+.animate-loading-bar {
+  animation: loading 0.8s ease infinite;
+}
