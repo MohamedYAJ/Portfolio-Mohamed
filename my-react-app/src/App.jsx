@@ -22,6 +22,8 @@ function App() {
           <Portfolio />
           <Experience />
           <Contact />
+          <Analytics />
+
         </div>
       )}
     </>
