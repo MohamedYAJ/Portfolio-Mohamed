@@ -6,6 +6,7 @@ import Home from "./componants/sections/Home";
 import Portfolio from "./componants/sections/Portfolio";
 import Experience from "./componants/sections/Experiences";
 import Contact from "./componants/sections/contact";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {  
   const [isLoaded, setIsLoaded] = useState(false);
