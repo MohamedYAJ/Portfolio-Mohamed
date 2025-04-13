@@ -15,19 +15,19 @@ const experiences = [
     title: "Restauration",
     company: "Ahmburgers",
     duration: "2022 - 2024",
-    description: "Gestion du restaurant, du stock, des appels téléphoniques, des clients... Courses chez le grossiste, livraison à domicile des commandes. Cuisine (préparation de la pâte à pain, de la viande fraîche...)",
+    description: "Management d'une équipe (3 pers.) : formation, gestion du planning...\nGestion de la boutique : organisation des cuisines, préparation du poste d'accueil...\nRelation clients : accueil et conseil Administration du stock et relation fournisseurs",
   },
   {
     title: "Technicien laboratoire",
     company: "SGS",
     duration: "2022",
-    description: "Gestion des flux de glacières. Analyse d’amiante sur des bétons. Concassage de bétons pour analyse.",
+    description: "Analyse de béton pour détection de matières dangereuses\nElaboration de comptes-rendus\nRespect des normes légales de sécurité et des procédures d'expérimentation",
   },
   {
     title: "Assistant Comptable",
     company: "Simplifya",
     duration: "2020-2022",
-    description: "Gestion des dépenses, factures, rapprochement bancaire.",
+    description: "Gestion des données pour déclaration TVA (QuickBooks)\nPrise en charge du rapprochement bancaire",
   },
   {
     title: "Service civique",
@@ -56,7 +56,7 @@ const Experience = () => {
               <div className="bg-[#1b1b3a] p-5 rounded-lg shadow-lg w-full max-w-lg">
                 <h3 className="text-xl md:text-2xl font-semibold">{exp.title}</h3>
                 <p className="text-lg text-gray-300">{exp.company} | {exp.duration}</p>
-                <p className="mt-2 text-gray-400">{exp.description}</p>
+                <p className="mt-2 text-gray-400 whitespace-pre-line">{exp.description}</p>
               </div>
             </motion.div>
           ))}
