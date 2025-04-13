@@ -21,7 +21,7 @@ const Navbar = () => {
           En recherche d'alternance
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
             <button>
-              <a href="/assets/CV_Mohamed.pdf" download="Mohamed YAJJOU">
+              <a href="/assets/MohamedYAJJOU.pdf" download="Mohamed YAJJOU">
                 <TbFileCv size={40} className="ml-2" />
               </a>
             </button>
